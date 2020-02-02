@@ -24,7 +24,7 @@ resource "docker_service" "ghost-service" {
 
   task_spec {
     container_spec {
-      image = var.ghost_image
+      image = var.image_name
 
       env = {
          database__client               = "mysql"
